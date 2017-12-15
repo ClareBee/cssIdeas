@@ -1,0 +1,68 @@
+
+
+#image-container {
+  margin: 300px;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border: solid black 1px;
+}
+
+.box {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: blue;
+  height: 10px;
+  -webkit-transition: width 2s ease-in;
+  -webkit-transition: height 3s ease-in;
+  transition: width 2.5s ease-in, height 2.5s ease-in;
+  width: 10px;
+}
+
+.box:hover {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+/*  problems with content jumping are fairly standard with chrome?
+/*  the change can be activated by javascript changing the class when object is clicked
+or just through css? */
+/* we can also change the height/width to the image div size? perhaps by inherit or parent
+or just with 100% */
+
+/* transition property and transition duration
+div {
+  transition: [property] [duration] [timing-function] [delay];
+}
+/translate - moves an element eg
+div {
+  transition: transform 1s;
+}
+
+div:hover {
+  transform: translate(20px, 20px);
+}
+transform-origin: left bottom;
+ transition: transform 3s;
+
+transform */
+/* transition-timing-function: ease-in ease-out */
+/* transition-delay: */
+
+
+/* how to make a square enlarge on hover  */
+/* .square {
+  position: fixed;
+  background: grey;
+  min-height: 10px;
+  margin: 100px;
+  -webkit-transition: all 2s ease-in;
+  width: 10px;
+}
+
+.square:hover {
+    transform-origin: bottom left;
+    transform: scale(9, 5);
+    transition-delay: 0s;
+} */

@@ -1,0 +1,115 @@
+/* * {border: black solid 1px;} */
+
+html {
+    height: 100%;
+}
+
+
+div#answer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* this is where our content will be */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* we can change the image, just playing around for now */
+#foreground {
+  background-image: url("juniperbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Spectral SC', serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width:100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.vanish {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width:20em;
+  height:20em;
+  margin-left: -10em;
+  margin-top: -10em;
+  /* background-color: #BAAFC4; */
+  /* z-index: 2; */
+  box-shadow: 2px 14px 18px 3px rgba(0,0,0,0.4);
+}
+
+#message {
+  background-color: #FDFDFD;
+  opacity: 0.9;
+  border-radius: 4px;
+  width: 100%;
+  height: 70%;
+  border-top: 5px solid #8F8694;
+  border-bottom: 5px solid #473C51;
+  /* z-index: 3; */
+}
+
+p {
+  margin: 0;
+  margin-top: 10px;
+  background: #F3F1F5;
+  border-radius: 4px;
+  padding: 18px;
+  font-size: 1.25em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  right: 50%;
+  margin-right: -60%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+#answer {
+  height: 30%;
+  width: 100%;
+}
+h3 {
+  margin-left: 40%;
+  margin-top: 20%;
+}
+#yes {
+  background-color: #BCF1E2;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+#no {
+  background-color: #AAB5BC;
+  width: 50%;
+  height: 100%;
+}
+
+#yes:hover {
+  background-color: #AED8DA;
+}
+
+#no:hover {
+  background-color: #899196;
+}

@@ -8,7 +8,7 @@ button:focus {
 }
 
 .dropdownbtn {
-    background-color: #87bba2;
+    /* background-color: #87bba2; */
     color: #ffffff;
     padding: 10px;
     font-size: 18px;
@@ -17,7 +17,7 @@ button:focus {
 }
 
 .dropdownbtn:hover, .dropdownbtn:focus {
-    background-color: #816e94;
+    background-color: #D3E6DD;
 }
 
 .dropdown {

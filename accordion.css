@@ -1,0 +1,34 @@
+.header {
+    background-color: #D6F3F4;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    transition: height 0.9s ease-in;
+}
+
+.active, .header:hover {
+    background-color: #E1F6F7;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    color: black;
+    height: 0px;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 200px;
+    overflow: hidden;
+}
+p {
+  color: black;
+  font-size: 20px;
+  margin: 0px;
+  padding: 50px 0;
+}
